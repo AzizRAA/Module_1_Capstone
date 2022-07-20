@@ -1,0 +1,375 @@
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: none;
+}
+
+.nav-menu {
+    position: fixed;
+    padding-top: 100px;
+    flex-direction: row;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-part {
+    margin: 16px 0;
+}
+
+.nav-menu li {
+    list-style-type: none;
+}
+
+.nav-part a {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #3d3e47;
+}
+
+.hamburger {
+    padding-top: 10px;
+    display: block;
+    cursor: pointer;
+    right: 0;
+    width: fit-content;
+    margin: 15px 10px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    background-color: #ffffff;
+    transform: translateY(11.5px) rotate(48deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    background-color: #ffffff;
+    transform: translateY(-10.5px) rotate(-48deg);
+}
+
+.hamburger.active {
+    float: right;
+    margin: -100px 20px auto 20px;
+}
+
+.container-nav {
+    background-image: url(img/bgorg.png);
+}
+
+.motto {
+    margin-top: 100px;
+}
+
+.motto h1 {
+    background: url(img/headback.jfif);
+}
+/* Program section start here */
+
+#container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.program {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: #2e2f35 url("img/proback.png");
+    background-repeat: repeat;
+}
+
+.program h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #f8f8f8d8;
+    margin: 25px 0 10px 0;
+}
+
+.program span {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    background-color: #f8f8f82c;
+    margin: 10px 30px;
+    box-shadow: 0 1px 10px  #00000079;
+    border-radius: 5px;
+}
+
+.part img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.part h3 {
+    color: #ec5242;
+    margin: -20px auto -30px auto;
+}
+
+.part p {
+    color: #f8f8f8;
+    max-width: 300px;
+    text-align: center;
+}
+
+.join-now {
+    text-align: center;
+}
+
+.join-now p {
+    padding: 10px 25px;
+    color: #ffffff;
+    background-color: red;
+}
+/* done */
+
+#staff h2 {
+    text-align: center;
+}
+
+#staff span {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: red;
+    right: 48%;
+}
+
+.staff-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.staff-img .back {
+    position: absolute;
+    width: 80px;
+    z-index: -1;
+}
+
+.staff-img .staff {
+    width: 150px;
+    padding: 10px;
+}
+
+.textEm {
+    color: red;
+}
+/* done */
+
+.partners {
+    background-color: darkgrey;
+}
+
+.partners h2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.partners span {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: red;
+    right: 48%;
+}
+
+.partners-logo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.part-logo img {
+    width: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.btnUp {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    padding: 10px;
+}
+
+.btnUp img {
+    max-width: 60px;
+}
+/* done */
+/*****  Desktop version  *****/
+
+@media screen and (min-width: 768px) {
+    .logo {
+        display: flex;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .navbar {
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        background-color: #ffffff;
+        box-shadow: 0 1px 10px  #ec53423b;
+        justify-content: space-between;
+        top: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        left: 0;
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: 50%;
+        top: -70%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-part a {
+        font-weight: 500;
+        font-size: 20px;
+        color: #344563;
+        text-transform: capitalize;
+        margin: 3rem;
+    }
+
+    .joinBtn a {
+        color: #ec5242;
+        padding: 8px 15px;
+        text-transform: uppercase;
+        border: 5px groove #ec5242;
+        margin: 3rem;
+    }
+
+    .nav-part a:active {
+        color: #ec5242;
+    }
+
+    .container-nav {
+        margin-top: -100px;
+        padding-top: 230px;
+        background-image: url(img/bgorg.png);
+        padding-bottom: 80px;
+    }
+
+    .motto {
+        padding: 0 150px;
+    }
+
+    .motto span {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .motto h1 {
+        font-size: 60px;
+        width: 630px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 65px;
+    }
+
+    .description {
+        max-width: 500px;
+    }
+    /* done */
+    .core {
+        display: flex;
+        justify-content: center;
+    }
+
+    .part {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+    .part img {
+        width: 60px;
+        color: #ffffff;
+    }
+
+    .part h3 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .part p {
+        text-align: center;
+    }
+
+    .staff-members {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .staff-text {
+        max-width: 450px;
+    }
+}
