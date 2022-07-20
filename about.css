@@ -1,0 +1,50 @@
+@import "home.css";
+
+.company {
+    text-align: center;
+}
+
+.hamburger.active {
+    margin: 0 20px auto 0;
+}
+
+.about {
+    text-align: center;
+}
+
+.about img {
+    max-width: 200px;
+}
+
+.blog {
+    text-align: center;
+}
+
+.blog-item {
+    max-width: 300px;
+    height: 150px;
+    background-image: url(img/2020.jpg);
+    background-size: cover;
+}
+
+.blog-info {
+    max-width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ca2a189d;
+}
+
+@media screen and (min-width: 768px) {
+    .company {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Module 1 Capstone Project
 
-> Description the project.
+> Module 1: Capstonre Project is about CyberXlab a summer course event.
 
 
 ## Built With
@@ -11,7 +11,7 @@
 - Frameworks
 - Technologies used
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
@@ -26,31 +26,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Github Desktop / Github Bash
+node
+Code editor (e.g. VS Code)
 
 ## 🤝 Contributing
 
@@ -64,9 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+A template designed by Cindy Shin was followed in this project. Her Behance handle is [@behance](https://www.behance.net/adagio07)
 
 ## 📝 License
 
